@@ -27,12 +27,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="./css/main.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+        integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+        crossorigin="anonymous"></script>
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -43,7 +44,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
         integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
         crossorigin="anonymous"></script>
-    l <script defer src="./js/main.js"></script>
+
+    <script defer src="./js/youtube.js"></script>
+    <script defer src="./js/main.js"></script>
 </head>
 
 <body>
@@ -422,16 +425,16 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">크리스마스~</a>
+                                <a href="javascript:void(0)">시스템 개선 및 서비스 점검 안내</a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">[당첨자발표]~~</a>
+                                <a href="javascript:void(0)">스타벅스 사칭 문자 및 SNS</a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">스타벅스 코리아 애플리케이션~~</a>
+                                <a href="javascript:void(0)">이브닝 푸드 아워 혜택 안내 </a>
                             </div>
                             <div class="swiper-slide">
-                                <a href="javascript:void(0)">[당첨자발표] 뉴이어 전자 ~</a>
+                                <a href="javascript:void(0)">스타벅스 사칭 문자 및 SNS</a>
                             </div>
                         </div>
                     </div>
@@ -511,7 +514,8 @@
             <img src="./images/season_product_image.png" alt="" class="product back-to-position to-right delay-0" />
             <div class="text-group">
                 <img src="./images/season_product_text1.png" alt="" class="title back-to-position to-left delay-1" />
-                <img src="./images/season_product_text2.png" alt="" class="description back-to-position to-left delay-2" />
+                <img src="./images/season_product_text2.png" alt=""
+                    class="description back-to-position to-left delay-2" />
                 <div class="more back-to-position to-left delay-3">
                     <a href="javascript:void(0)" class="btn">자세히보기 </a>
                 </div>
@@ -534,7 +538,7 @@
         </div>
     </section>
     <!-- PICK YOUR FAVORITE -->
-  <section class="pick-your-favorite scroll-spy">
+    <section class="pick-your-favorite scroll-spy">
         <div class="inner">
             <div class="text-group">
                 <img src="./images/favorite_text1.png" alt="" class="title back-to-position to-right delay-0 " />
@@ -544,7 +548,7 @@
                 </div>
             </div>
         </div>
-  </section>
+    </section>
 
     <!-- RESERVE STORE -->
     <section class="reserve-store">
@@ -572,10 +576,10 @@
             <img src="https://image.istarbucks.co.kr/img/event/2022/221212_main_story_2.png" alt=""
                 class="picture picture2 back-to-position to-right delay-1" />
             <div class="text-group">
-                <img src="https://image.istarbucks.co.kr/img/event/2022/221212_pc_main_story_txt_1.png" alt="스타벅스를 가까이에서 경험해보세요."
-                    class="title back-to-position to-left delay-0" />
-                <img src="https://image.istarbucks.co.kr/img/event/2022/221212_pc_main_story_txt_2.png" alt="고객님과 가장 가까이 있는 매장을 찾아보세요!"
-                    class="description back-to-position to-left delay-1" />
+                <img src="https://image.istarbucks.co.kr/img/event/2022/221212_pc_main_story_txt_1.png"
+                    alt="스타벅스를 가까이에서 경험해보세요." class="title back-to-position to-left delay-0" />
+                <img src="https://image.istarbucks.co.kr/img/event/2022/221212_pc_main_story_txt_2.png"
+                    alt="고객님과 가장 가까이 있는 매장을 찾아보세요!" class="description back-to-position to-left delay-1" />
                 <div class="more back-to-position to-left delay-2">
                     <a href="javascript:void(0)" class="btn">매장찾기</a>
                 </div>
@@ -592,13 +596,16 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="https://image.istarbucks.co.kr/img/event/2022/footer_award_2211_01_T.jpg" alt="여섯가족부 2020 대한민국 일자리대상 여성가족부장관상" />
+                        <img src="https://image.istarbucks.co.kr/img/event/2022/footer_award_2211_01_T.jpg"
+                            alt="여섯가족부 2020 대한민국 일자리대상 여성가족부장관상" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://image.istarbucks.co.kr/img/event/2022/footer_award_2211_07_T_02.jpg" alt="소비자중심경영 CCM인증획득" />
+                        <img src="https://image.istarbucks.co.kr/img/event/2022/footer_award_2211_07_T_02.jpg"
+                            alt="소비자중심경영 CCM인증획득" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://image.istarbucks.co.kr/img/event/2022/footer_award_2211_02_T.jpg" alt="행정안전부 2020 소방의 날 행정안전부장관 표창" />
+                        <img src="https://image.istarbucks.co.kr/img/event/2022/footer_award_2211_02_T.jpg"
+                            alt="행정안전부 2020 소방의 날 행정안전부장관 표창" />
                     </div>
                     <div class="swiper-slide">
                         <img src="./images/awards_slide4.jpg" alt="경연대회 대상" />
