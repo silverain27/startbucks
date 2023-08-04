@@ -144,7 +144,6 @@ header .sub-menu ul.menu li{
 }
 header .sub-menu ul.menu li::before{
     content: "";
-    display : block;
     width :1px;
     height : 12px;
     background-color: #e5e5e5;
